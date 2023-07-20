@@ -1,0 +1,14 @@
+:host {
+  display: inline-block;
+  height: 32px;
+}
+
+.icon {
+  height: inherit;
+  aspect-ratio: 1;
+  transition: 0.1s;
+}
+
+.icon:active {
+  filter: brightness(50%);
+}

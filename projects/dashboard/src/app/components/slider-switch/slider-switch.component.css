@@ -1,0 +1,45 @@
+:host {
+  display: flex;
+  align-items: center;
+  height: var(--primaryFontSize);
+  font-size: var(--primaryFontSize);
+  margin: 2% 0px;
+}
+
+.background {
+  position: relative;
+
+  display: block;
+  padding: 1%;
+  height: 100%;
+  aspect-ratio: 2/1;
+
+  background-color: var(--secondaryComponentBackground);
+  box-shadow: inset var(--primaryBoxShadow);
+
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50vh;
+}
+
+.sliding-dot {
+  display: block;
+
+  height: 100%;
+  aspect-ratio: 1;
+
+  border-radius: 100%;
+  background-color: var(--primaryAlertColor);
+  box-shadow: var(--alertBoxShadow);
+  transition: 0.6s;
+}
+
+.checked {
+  background-color: var(--primaryConfirmColor);
+  box-shadow: var(--confirmBoxShadow);
+  transform: translateX(100%);
+}
+
+.switch-label {
+  margin-left: 8px;
+}

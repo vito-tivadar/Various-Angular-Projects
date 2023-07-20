@@ -1,0 +1,130 @@
+[
+  {
+    "Id": "sha256:d8765e3be8fa48477e7b1334b01081ccc6f6a87b62e29c7d4d0e384c216892c8",
+    "RepoTags": ["owncloud/server:latest"],
+    "RepoDigests": ["owncloud/server@sha256:478b2e6b18e39f924020cd4737ae532df540fbbfe8b8692ad2905c71e23d80f7"],
+    "Parent": "",
+    "Comment": "",
+    "Created": "2023-01-10T21:05:51.511538995Z",
+    "Container": "ea0a58405c4833dd82abfc594ca8bbf24a4d124b51624c14f220baddb4313617",
+    "ContainerConfig": {
+      "Hostname": "ea0a58405c48",
+      "Domainname": "",
+      "User": "",
+      "AttachStdin": false,
+      "AttachStdout": false,
+      "AttachStderr": false,
+      "ExposedPorts": {
+        "8080/tcp": {}
+      },
+      "Tty": false,
+      "OpenStdin": false,
+      "StdinOnce": false,
+      "Env": [
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "DEBIAN_FRONTEND=noninteractive",
+        "TERM=xterm",
+        "GOMPLATE_VERSION=v3.11.3",
+        "WAIT_FOR_VERSION=v1.1.0",
+        "RETRY_VERSION=v2.0.0"
+      ],
+      "Cmd": ["/bin/sh", "-c", "#(nop) ", "LABEL org.opencontainers.image.url=https://github.com/owncloud-docker/server"],
+      "Image": "sha256:23dbbf23596ce2ac6206eb26316de415708550ba534e52ef3d8da70526c55bff",
+      "Volumes": {
+        "/mnt/data": {}
+      },
+      "WorkingDir": "/var/www/owncloud",
+      "Entrypoint": ["/usr/bin/entrypoint"],
+      "OnBuild": null,
+      "Labels": {
+        "maintainer": "ownCloud GmbH <devops@owncloud.com>",
+        "org.opencontainers.image.authors": "ownCloud DevOps <devops@owncloud.com>",
+        "org.opencontainers.image.created": "2023-01-10T21:04:30Z",
+        "org.opencontainers.image.description": "ownCloud - Secure Collaboration Platform",
+        "org.opencontainers.image.documentation": "https://github.com/owncloud-docker/server",
+        "org.opencontainers.image.revision": "231bb870329ce2e89db52dd2e82d593448245eb2",
+        "org.opencontainers.image.source": "https://github.com/owncloud-docker/server.git",
+        "org.opencontainers.image.title": "ownCloud Server",
+        "org.opencontainers.image.url": "https://github.com/owncloud-docker/server",
+        "org.opencontainers.image.vendor": "ownCloud GmbH"
+      }
+    },
+    "DockerVersion": "20.10.14",
+    "Author": "",
+    "Config": {
+      "Hostname": "",
+      "Domainname": "",
+      "User": "",
+      "AttachStdin": false,
+      "AttachStdout": false,
+      "AttachStderr": false,
+      "ExposedPorts": {
+        "8080/tcp": {}
+      },
+      "Tty": false,
+      "OpenStdin": false,
+      "StdinOnce": false,
+      "Env": [
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "DEBIAN_FRONTEND=noninteractive",
+        "TERM=xterm",
+        "GOMPLATE_VERSION=v3.11.3",
+        "WAIT_FOR_VERSION=v1.1.0",
+        "RETRY_VERSION=v2.0.0"
+      ],
+      "Cmd": ["/usr/bin/owncloud", "server"],
+      "Image": "sha256:23dbbf23596ce2ac6206eb26316de415708550ba534e52ef3d8da70526c55bff",
+      "Volumes": {
+        "/mnt/data": {}
+      },
+      "WorkingDir": "/var/www/owncloud",
+      "Entrypoint": ["/usr/bin/entrypoint"],
+      "OnBuild": null,
+      "Labels": {
+        "maintainer": "ownCloud GmbH <devops@owncloud.com>",
+        "org.opencontainers.image.authors": "ownCloud DevOps <devops@owncloud.com>",
+        "org.opencontainers.image.created": "2023-01-10T21:04:30Z",
+        "org.opencontainers.image.description": "ownCloud - Secure Collaboration Platform",
+        "org.opencontainers.image.documentation": "https://github.com/owncloud-docker/server",
+        "org.opencontainers.image.revision": "231bb870329ce2e89db52dd2e82d593448245eb2",
+        "org.opencontainers.image.source": "https://github.com/owncloud-docker/server.git",
+        "org.opencontainers.image.title": "ownCloud Server",
+        "org.opencontainers.image.url": "https://github.com/owncloud-docker/server",
+        "org.opencontainers.image.vendor": "ownCloud GmbH"
+      }
+    },
+    "Architecture": "amd64",
+    "Os": "linux",
+    "Size": 1056237693,
+    "VirtualSize": 1056237693,
+    "GraphDriver": {
+      "Data": {
+        "LowerDir": "/var/lib/docker/overlay2/7c71f60697241627b3a410827d99b2462190007d7db72c2b1b65c6b20ab1445b/diff:/var/lib/docker/overlay2/d82757a679846bd603e58a549a4cc8f54bf0b83c503a96152a2970b2cf87f7d8/diff:/var/lib/docker/overlay2/9f5d84baaf79d64a467622119f84743caa3a8cb9369479ee47e552b1a4216af1/diff:/var/lib/docker/overlay2/fb3f5d63e3e94e360484a6ee69d0f7420d65af390711bc2b0d642a7b8c3a74e8/diff:/var/lib/docker/overlay2/2aecdd6dee39a79af809831a647382f186a01b3faba952cc5633be41b1912fee/diff:/var/lib/docker/overlay2/d9380ef40bb6fdfc69522a23e13777190d97bd5f58c9bf0096a5248cea3f1969/diff:/var/lib/docker/overlay2/ea381af2e5023fd4f5dd58ab237f78d95f39e5ea13b3e9f009aaf5b40002f616/diff:/var/lib/docker/overlay2/b1a098d0b64d040eb2aac0111477c3cf16505a9f65d20bfa8ae328b94e237781/diff:/var/lib/docker/overlay2/af68b2ac03a16a39c8cecbfb8a5ce53908ee25ecfcff49e2d339022027c7d726/diff:/var/lib/docker/overlay2/23b268d3152a9dc8488a25d6c2259a1e430034dc916f493031eb369eaa81318d/diff:/var/lib/docker/overlay2/30dcdd411cf165b3431f9d71a997422be319788d889a31299a8be8f799b5020c/diff",
+        "MergedDir": "/var/lib/docker/overlay2/655099c2050bd8da4f50ef1b2fd36319d97ebd6f438e1aefa6b6517cb0521935/merged",
+        "UpperDir": "/var/lib/docker/overlay2/655099c2050bd8da4f50ef1b2fd36319d97ebd6f438e1aefa6b6517cb0521935/diff",
+        "WorkDir": "/var/lib/docker/overlay2/655099c2050bd8da4f50ef1b2fd36319d97ebd6f438e1aefa6b6517cb0521935/work"
+      },
+      "Name": "overlay2"
+    },
+    "RootFS": {
+      "Type": "layers",
+      "Layers": [
+        "sha256:0002c93bdb3704dd9e36ce5153ef637f84de253015f3ee330468dccdeacad60b",
+        "sha256:c328ab082c50cac517e6abe0d6004c43f9fbc8493aea40f38c9ce46f15d671c0",
+        "sha256:62e9f13961feda0fca873ad7d773fcd8c6c6ae2e4617997e00069f11a4d987c3",
+        "sha256:2feeafa833ab686955e3a7565662428bc2788c5f95f3a627a87a1f7ca54812bf",
+        "sha256:b4d0f650239bdde77c8cc07aaabd1d0f08611dc2087b186ae6f225b56bad8fd8",
+        "sha256:11eb797e47e20ef55ac83da827309df9e01a8c459c7d75a72835d35f989af121",
+        "sha256:1b1eee94ccb183fb30a4c2073fc2fd1708d6eb36179c1ceed4c401a922443a57",
+        "sha256:6680d5557bbf8c5b997ea8a9ec4d2c6ca68bd18f4da32afe82b2013755519456",
+        "sha256:2b1f25115a7c3e07f7308548f75324114a2ea53da7ac19c9d8b902b647ecf920",
+        "sha256:ca975f4c2c4bd4e034f5a794f5fdbe4ba0be2e2b2b5ff000c1a75d512c173306",
+        "sha256:313f48a53512ef9b939de10b810ac82e51d244090d61cf94e9114dff5956d660",
+        "sha256:f0fc12ec8d10e62872737f8df329d7a3d28dddec2237d3617758e81230ef0d96"
+      ]
+    },
+    "Metadata": {
+      "LastTagTime": "0001-01-01T00:00:00Z"
+    }
+  }
+]

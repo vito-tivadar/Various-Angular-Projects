@@ -1,0 +1,36 @@
+{
+  "Id": "bb5e82ae2966583e4d53460dcc4acabe270f2b898093f27f610d8a7e3b33e086",
+  "Names": ["/reverent_edison"],
+  "Image": "docker/getting-started",
+  "ImageID": "sha256:3e4394f6b72fccefa2217067a7f7ff84d5d828afa9623867d68fce4f9d862b6c",
+  "Command": "/docker-entrypoint.sh nginx -g 'daemon off;'",
+  "Created": "2023-03-28T12:03:23Z",
+  "Ports": [
+    {
+      "IP": "0.0.0.0",
+      "PrivatePort": 80,
+      "PublicPort": 81,
+      "Type": "tcp"
+    }
+  ],
+  "Labels": {
+    "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+  },
+  "State": "running",
+  "Status": "Up 3 hours",
+  "NetworkSettings": {
+    "Networks": {
+      "bridge": {
+        "NetworkID": "8e067354e0502d8a6210d1b8d5fd2b3674ec21cc12842e298ab6551ffe4aadc5",
+        "EndpointID": "59dc936b6bb99f1a8cc4b340dd20ef5a29925d502a938584dc8901b90048d219",
+        "Gateway": "172.17.0.1",
+        "IPAddress": "172.17.0.2",
+        "IPPrefixLen": 16,
+        "IPv6Gateway": "",
+        "GlobalIPv6Address": "",
+        "MacAddress": "02:42:ac:11:00:02"
+      }
+    }
+  },
+  "Mounts": []
+}

@@ -1,0 +1,109 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+font-family: 'Manrope', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+:root {
+  /* ----- GLOBAL VARIABLES ----- */
+  --appBackground: #35363a;
+
+  /* primary */
+  --primaryFontColor: #dfdfdf;
+  --primaryComponentBackground: #47484d;
+  --primaryComponentHover: #8a8a8a59;
+  /* --primaryComponentHover: #4b4c52; */
+  --primaryBorderColor: #dfdfdf80;
+
+  --primaryBorder: 1px solid var(--primaryBorderColor);
+  --primaryBoxShadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  --primaryFontSize: 18px;
+  --primaryTitleFontSize: 1.2rem;
+  --primaryRadius: 8px;
+
+  /* secondary */
+  --secondaryFontColor: white;
+  --secondaryComponentBackground: #3d3e42;
+  --secondaryComponentHover: #55565c;
+
+  --secondaryBoxShadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  --secondaryFontSize: 0.9rem;
+  --secondaryBorder: 1px solid var(--secondaryComponentHover);
+  --secondarytitleFontSize: 1.1rem;
+  --secondaryRadius: 6px;
+
+  /* tertiary  */
+  --tertiaryFontSize: 0.8rem;
+  --tertiaryBoxShadow: 0 0 2px rgba(0, 0, 0, 0.7);
+
+  /* other */
+  --primaryAlertColor: #ff4a4a;
+  --primaryWarningColor: #eeb845;
+  --primaryConfirmColor: #2ac45d;
+
+  --secondaryAlertColor: #ff4d4da1;
+  --secondaryWarningColor: #eeb845a1;
+  --secondaryConfirmColor: #2ac45da1;
+
+  --windowsColor: #0062ad;
+  --ubuntuColor: #e63d00;
+  --mintColor: #569636;
+  --alertBoxShadow: 0 0 5px var(--secondaryAlertColor);
+  --warningBoxShadow: 0 0 5px var(--secondaryWarningColor);
+  --confirmBoxShadow: 0 0 5px var(--secondaryConfirmColor);
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+
+  color: var(--primaryFontColor);
+  background-color: var(--appBackground);
+
+  font-size: var(--primaryFontSize);
+  font-family: 'Source Sans Pro', sans-serif;
+
+  /*
+  background: linear-gradient(180deg, rgba(43, 43, 46, 1) 30%, rgba(61, 62, 66, 1) 84%, rgba(82, 82, 88, 1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  */
+}
+
+input,
+button {
+}
+
+input {
+  background-color: var(--primaryComponentBackground);
+  border: none;
+  border-radius: 3px;
+  padding: 4px 8px;
+  outline: none;
+  /* box-shadow: inset var(--primaryBoxShadow); */
+  color: var(--primaryFontColor);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: var(--primaryFontSize);
+}
+
+input::selection {
+  color: var(--primaryComponentBackground);
+  background: var(--primaryFontColor);
+}
+
+button {
+  color: var(--primaryFontColor);
+  background-color: var(--primaryComponentBackground);
+
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: var(--primaryFontSize);
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 1px 8px;
+}
+
+button:active {
+  box-shadow: inset var(--primaryBoxShadow);
+}

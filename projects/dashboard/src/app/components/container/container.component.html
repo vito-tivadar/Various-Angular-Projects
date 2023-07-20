@@ -1,0 +1,5 @@
+<div *ngIf="titleImage || title" class="title-div" [style.height]="titleHeight" [style]="titleDivStyle">
+  <img *ngIf="titleImage" [src]="titleImage" class="title-image" />
+  <span *ngIf="title" [style.fontSize]="titleFontSize">{{ title | uppercase }}</span>
+</div>
+<div class="content-div" [style]="contentDivStyle"><ng-content></ng-content></div>

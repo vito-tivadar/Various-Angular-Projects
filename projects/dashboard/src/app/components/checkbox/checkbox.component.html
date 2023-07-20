@@ -1,0 +1,5 @@
+<input [id]="checkboxID" type="checkbox" (change)="onCheck()" />
+<label [for]="checkboxID" class="checkbox"> {{ checked ? checkboxSign : '' }}</label>
+<label [for]="checkboxID" class="text">
+  <ng-content></ng-content>
+</label>

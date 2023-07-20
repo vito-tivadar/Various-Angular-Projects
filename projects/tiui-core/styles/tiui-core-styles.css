@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+:host {
+  /* GLOBAL VARIABLES FOR TiUI CORE */
+  /* Primary colors */
+  --FontFamily: 'Source Sans Pro', sans-serif;
+  --primaryFontSize: 16px;
+  --primaryFontColor: black;
+  --primaryBackgroundColor: #ffe600;
+  /* OK colors */
+  --OkBackgroundColor: #9ed458;
+
+  /* Alert colors */
+  --AlertBackgroundColor: #ff6060;
+  /* Default values */
+  color: var(--primaryFontColor);
+  font-size: var(--primaryFontSize);
+  font-family: var(--FontFamily);
+}
+
+button {
+  margin: 0px 10px;
+  padding: 10px 25px;
+
+  color: var(--primaryFontColor);
+  background-color: var(--primaryBackgroundColor);
+
+  border: 0px solid;
+  border-radius: 8px;
+
+  font-size: var(--primaryFontSize);
+  font-family: var(--FontFamily);
+
+  transition: 0.3s;
+}
+
+button:hover {
+  filter: brightness(85%);
+  transition: 0.3s;
+}
+
+.alert {
+  background-color: var(--AlertBackgroundColor);
+}
+
+.ok {
+  background-color: var(--OkBackgroundColor);
+}

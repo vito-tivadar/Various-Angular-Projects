@@ -1,0 +1,52 @@
+:host {
+  display: contents;
+  vertical-align: top;
+  text-decoration: none;
+  height: 28px;
+  padding: 3px 0px;
+  font-size: var(--primaryFontSize);
+}
+
+li {
+  all: inherit;
+  display: block;
+
+  margin: 3px 0px;
+  padding: 5px 10px;
+
+  background-color: var(--secondaryComponentBackground);
+  box-shadow: inset var(--secondaryBoxShadow);
+  border-radius: 5px;
+  user-select: none;
+
+  transition: 0.5s;
+}
+
+li:hover {
+  background-color: var(--primaryComponentHover);
+  transition: 0.5s;
+}
+
+li:active {
+  color: var(--secondaryFontColor);
+  transition: 0.1s;
+  box-shadow: inset var(--primaryBoxShadow);
+}
+
+a {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  height: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+img {
+  height: inherit;
+  padding-right: 3px;
+}

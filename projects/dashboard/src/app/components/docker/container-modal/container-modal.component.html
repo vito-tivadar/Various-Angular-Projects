@@ -1,0 +1,16 @@
+<form class="form">
+  <div class="form-group">
+    <div>
+      <span class="title">Container name:</span>
+      <input #name [value]="getDataValue(0)" (change)="updateDataValue(0, name.value)" />
+    </div>
+    <div>
+      <span class="title">Container ID:</span>
+      <input #id [value]="getDataValue(1)" (change)="updateDataValue(1, id.value)" />
+    </div>
+    <div>
+      <span class="title">Container Created On:</span>
+      <span class="value">{{ getDataValue(2) }}</span>
+    </div>
+  </div>
+</form>

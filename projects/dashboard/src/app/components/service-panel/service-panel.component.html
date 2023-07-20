@@ -1,0 +1,27 @@
+<div class="service-container">
+  <div class="service-info">
+    <img [src]="serviceInfo.icon" class="service-info-subitem service-icon" />
+    <div class="service-info-subitem">
+      <p class="service-info-title" [class.placeholder]="serviceInfo.title == '%placeholder%'">
+        {{ serviceInfo.title }}
+      </p>
+      <p class="service-info-desc" [class.placeholder]="serviceInfo.description == '%placeholder%'">
+        {{ serviceInfo.description }}
+      </p>
+    </div>
+    <div class="right-side-info">
+      <img
+        *ngIf="serviceInfo.editServiceRoute != ''"
+        src="assets/icons/other-icons/Settings-32.png"
+        class="edit-icon"
+        (click)="onEditClick()" />
+      <span class="service-status-dot" [class.running]="serviceInfo.isRunning"></span>
+    </div>
+  </div>
+  <div class="sub-items-section">
+    <div *ngFor="let subItem of serviceInfo.subItems" class="sub-item">
+      <p>{{ subItem.value }} {{ subItem.valueUnit ? subItem.valueUnit : '' }}</p>
+      <p class="service-info-text">{{ subItem.text | uppercase }}</p>
+    </div>
+  </div>
+</div>

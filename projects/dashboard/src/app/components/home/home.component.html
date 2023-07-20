@@ -1,0 +1,60 @@
+<search-bar style="margin-top: 15px"></search-bar>
+<separator></separator>
+<div class="main-container">
+  <container title="Server-PC" titleImage="assets/icons/container-icons/win10.png" style="min-width: 230px">
+    <loading-bar
+      *ngFor="let component of components"
+      [title]="component.title"
+      [icon]="component.icon"
+      style="width: 100%; height: 30px; margin: 5px 0px"
+      [valueCurrent]="component.currentValue"
+      [valueMax]="component.maxValue"
+      [valueUnit]="component.valueUnit"
+      [barColor]="'var(--windowsColor)'"
+      [dataUpdateFrequency]="component.dataUpdateFrequency + 'ms'"
+    >
+    </loading-bar>
+  </container>
+
+  <container title="Other bookmarks" titleImage="assets/icons/container-icons/bookmark-icon.png">
+    <bookmark
+      *ngFor="let bookmark of otherBookmarks; index as i"
+      image="{{ bookmark.image }}"
+      [href]="'#' + bookmark.text"
+    >
+      {{ bookmark.text }}
+    </bookmark>
+  </container>
+
+  <container title="Server bookmarks" titleImage="assets/icons/container-icons/bookmark-icon.png">
+    <bookmark
+      *ngFor="let bookmark of serverBookmarks; index as i"
+      image="{{ bookmark.image }}"
+      [href]="'#' + bookmark.text"
+    >
+      {{ bookmark.text }}
+    </bookmark>
+  </container>
+</div>
+
+<separator></separator>
+
+<div class="main-container">
+  <container *ngFor="let service of services">
+    <service-panel [serviceInfo]="service"></service-panel>
+  </container>
+</div>
+
+<separator></separator>
+
+<div class="main-container">
+  <container title="test components">
+    <slider-switch
+      *ngFor="let service of services"
+      [isChecked]="service.isRunning"
+      (onCheck)="service.isRunning = $event"
+    >
+      {{ service.title }}
+    </slider-switch>
+  </container>
+</div>

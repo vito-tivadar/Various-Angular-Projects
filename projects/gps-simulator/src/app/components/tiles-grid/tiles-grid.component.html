@@ -1,0 +1,9 @@
+<div class="tiles-grid" style="--top: {{ top }}; --left:{{ left }};">
+  <img *ngFor="let image of images" [src]="image" class="grid-image" />
+</div>
+<div class="center-container">
+  <div class="screen-border">
+    <div class="screen" style="width: 240px; height: 320px"></div>
+  </div>
+  <img class="icon" src="assets/Navigation-Up-01-32.png" />
+</div>

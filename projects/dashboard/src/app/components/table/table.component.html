@@ -1,0 +1,54 @@
+<table [class.user-select]="enableUserSelect">
+  <!--HEADERS-->
+  <tr class="header-row">
+    <!--custom headers-->
+    <th
+      *ngFor="let header of data.headers"
+      [style.text-align]="header.columnAlignment"
+      [style.width]="header.width"
+      class="header-field"
+    >
+      {{ header.columnText }}
+    </th>
+    <!--edit header-->
+    <th *ngIf="data.enableEditButton" class="data-field" style="text-align: center; width: 50px">Edit</th>
+    <!--delete header-->
+    <th *ngIf="data.enableDeleteButton" class="data-field" style="text-align: center; width: 50px">Delete</th>
+  </tr>
+
+  <!--ROWS-->
+  <tr *ngFor="let row of data.rows" class="data-row">
+    <!--custom headers-->
+    <td
+      *ngFor="let header of data.headers; index as i"
+      class="data-field"
+      [style.text-align]="data.headers[i].columnAlignment"
+    >
+      <div [class.overflow]="data.headers[i].enableOverflow">
+        {{ row.textFields[i] }}
+        <icon-button
+          *ngIf="data.headers[i].enableCopyButton"
+          style="height: 14px; padding-left: 8px"
+          iconPath="assets/icons/other-icons/Copy-01-WF-32.png"
+          (clicked)="copyValueToClipboard(row.textFields[i])"
+        ></icon-button>
+      </div>
+    </td>
+    <!--edit header-->
+    <td *ngIf="data.enableEditButton" class="data-field" style="text-align: center">
+      <icon-button
+        style="height: 18px"
+        iconPath="assets/icons/other-icons/Data-Edit-32.png"
+        (clicked)="editFunction(row)"
+      ></icon-button>
+    </td>
+    <!--delete header-->
+    <td *ngIf="data.enableDeleteButton" class="data-field" style="text-align: center">
+      <icon-button
+        style="height: 18px"
+        iconPath="assets/icons/other-icons/Data-Delete-32.png"
+        (clicked)="deleteFunction(row)"
+      ></icon-button>
+    </td>
+  </tr>
+</table>

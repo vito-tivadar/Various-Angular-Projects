@@ -1,0 +1,46 @@
+:host {
+  padding: 3px;
+}
+
+.zippy {
+  width: 100%;
+  border: solid 0px gray;
+  height: 40px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  font-size: 24px;
+  background-color: #eee;
+  display: flex;
+}
+
+.zippy-container {
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.zippy-container-expanded {
+  border-radius: 5px 5px 0px 0px;
+  background-color: #ddd;
+  border-bottom: solid 1px #ccc;
+}
+
+.zippy-arrow {
+  font-size: 20px;
+  align-self: flex-end;
+}
+
+.zippy-arrow {
+  align-self: flex-end;
+}
+
+.zippy-item {
+  padding: 0px 20px;
+  background-color: #eee;
+  border-radius: 0px;
+  align-items: center;
+}
+
+.zippy-item:hover {
+  background-color: #ddd;
+}

@@ -1,0 +1,14 @@
+:host {
+  margin-top: 10px;
+  padding: 8px 16px;
+}
+
+.text {
+  padding-right: 5px;
+}
+
+input {
+  width: inherit;
+  font-size: 20px;
+  padding: 2px 8px;
+}

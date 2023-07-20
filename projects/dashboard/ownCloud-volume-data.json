@@ -1,0 +1,11 @@
+[
+  {
+    "CreatedAt": "2023-01-19T09:23:53Z",
+    "Driver": "local",
+    "Labels": null,
+    "Mountpoint": "/var/lib/docker/volumes/19be1e8827f48596aed7486cffc7a776429a1c6210e8a85f811e187d8b02fc95/_data",
+    "Name": "19be1e8827f48596aed7486cffc7a776429a1c6210e8a85f811e187d8b02fc95",
+    "Options": null,
+    "Scope": "local"
+  }
+]

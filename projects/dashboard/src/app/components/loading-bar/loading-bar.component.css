@@ -1,0 +1,49 @@
+:host {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 5px 0px;
+}
+
+.icon {
+  margin-right: 5px;
+  height: inherit;
+  aspect-ratio: 1/1;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: inherit;
+  border-radius: 7px;
+  background-color: var(--secondaryComponentBackground);
+  box-shadow: inset var(--secondaryBoxShadow);
+}
+
+.progression {
+  margin: 2px 2px;
+  height: calc(100% - 4px);
+  min-width: 10px;
+  background-color: var(--tertiaryComponentBackground);
+  border-radius: 5px;
+  transition-timing-function: linear;
+  box-shadow: var(--secondaryBoxShadow);
+}
+
+.title-text {
+  position: absolute;
+  left: 5px;
+  display: inline-block;
+  line-height: 50%;
+}
+
+.percentage-text {
+  position: absolute;
+  right: 5px;
+  display: inline-block;
+  line-height: 50%;
+}
+
+p {
+  margin: 0px;
+}

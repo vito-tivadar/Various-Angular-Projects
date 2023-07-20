@@ -1,0 +1,4 @@
+<button [style.fontSize]="fontSize" [style]="style">
+  <img *ngIf="image" src="{{ image }}" [style.width]="imageHeight" [style.padding]="imagePadding" />
+  <ng-content></ng-content>
+</button>

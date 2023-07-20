@@ -1,0 +1,20 @@
+:host {
+  display: contents;
+
+  width: 100%;
+  height: 1px;
+  margin: 25px 0px;
+}
+
+hr {
+  display: block;
+  margin: inherit;
+
+  background-color: var(--primaryFontColor);
+  box-shadow: var(--primaryBoxShadow);
+}
+
+.vertical {
+  width: 1px;
+  height: 100%;
+}

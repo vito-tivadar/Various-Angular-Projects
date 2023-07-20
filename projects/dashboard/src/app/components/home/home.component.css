@@ -1,0 +1,25 @@
+:host {
+  width: 90%;
+}
+
+.main-container {
+  --gap: 16px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  width: calc(100% - var(--gap));
+  column-gap: 16px;
+  row-gap: var(--gap);
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main-container {
+    grid-template-columns: auto;
+    width: 100%;
+  }
+}

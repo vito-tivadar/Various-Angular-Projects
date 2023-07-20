@@ -1,0 +1,9 @@
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: #3d3e42; */
+  background-color: transparent;
+  padding: 10px 0px;
+  width: 100%;
+}

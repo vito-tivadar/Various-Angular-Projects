@@ -1,0 +1,50 @@
+:host {
+  --padding: 8px 16px;
+
+  width: 100%;
+}
+
+table {
+  width: inherit;
+  table-layout: fixed;
+
+  color: #dfdfdf;
+  background-color: transparent;
+
+  border-collapse: separate;
+  border-spacing: 0 4px;
+  user-select: none;
+}
+
+.overflow {
+  width: calc(100% - 24px);
+  display: inline-block;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.user-select {
+  user-select: all;
+}
+
+.header-field {
+  padding: var(--padding);
+  font-size: 1.2rem;
+}
+
+.data-row {
+  background-color: var(--secondaryComponentBackground);
+  padding: 0px 8px;
+  transition: 0.1s;
+}
+
+.data-row:hover {
+  background-color: var(--primaryComponentBackground);
+}
+
+.data-field {
+  background-color: transparent;
+  padding: var(--padding);
+}

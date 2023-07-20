@@ -1,0 +1,13 @@
+span {
+    font-size: 20px;
+    padding: 0px 2px;
+}
+
+.heart {
+    cursor: pointer;
+    color: #ccc;
+}
+
+.liked {
+    color: deeppink
+}

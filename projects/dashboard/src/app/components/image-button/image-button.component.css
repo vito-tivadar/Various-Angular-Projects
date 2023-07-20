@@ -1,0 +1,38 @@
+:host {
+  display: contents;
+}
+
+button {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  width: 100%;
+
+  margin: 3px 0px;
+  padding: 5px 10px;
+
+  background-color: var(--secondaryComponentBackground);
+  color: var(--primaryFontColor);
+
+  border: var(--secondaryBorder);
+  border-radius: 5px;
+  user-select: none;
+
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: var(--secondaryComponentHover);
+  transition: 0.5s;
+}
+
+button:active {
+  border: var(--primaryBorder);
+  color: var(--secondaryFontColor);
+  transition: 0.1s;
+}
+
+img {
+  padding: 5px 0px;
+}

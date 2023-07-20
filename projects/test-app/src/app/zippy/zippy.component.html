@@ -1,0 +1,18 @@
+<div class="zippy zippy-container" [class.zippy-container-expanded]="isExpanded">
+  <span class="zippy-text">{{ zippyTitle }}</span>
+  <span
+    class="glyphicon zippy-arrow"
+    [ngClass]="{
+      'glyphicon-chevron-up': isExpanded,
+      'glyphicon-chevron-down': !isExpanded
+    }"></span>
+</div>
+<div [@expandCollapse]="isExpanded ? 'expanded' : 'collapsed'">
+  <!-- [hidden]="!isExpanded" -->
+  <div
+    *ngFor="let item of zippyItems; last as l"
+    class="zippy zippy-item"
+    [style]="l ? 'border-radius: 0px 0px 5px 5px' : 'border-radius: 0px'">
+    {{ item.name }}
+  </div>
+</div>

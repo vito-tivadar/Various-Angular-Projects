@@ -1,0 +1,6 @@
+<h1>Admin</h1>
+<h2>Orders</h2>
+<ul *ngIf="orders">
+  <li *ngFor="let order of orders">{{ order.name }}</li>
+</ul>
+<label>Go back to: <a routerLink="/" style="margin-top: 15px">HomePage</a> </label>

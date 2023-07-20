@@ -1,0 +1,94 @@
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #00000080;
+}
+
+.modal-box {
+  position: relative;
+
+  padding: 20px;
+
+  background-color: #f7f7f7;
+  box-shadow: 0 0 8px #000000bb;
+
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.x-button {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+
+  outline: none;
+  border: none;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  padding: 0px 3px;
+}
+
+.x-button:hover {
+  opacity: 0.6;
+}
+
+.x-button:active {
+  opacity: 0.4;
+}
+
+.x-button-backdrop {
+  color: black;
+  background-color: transparent;
+  opacity: 0.8;
+}
+
+.x-button-modal {
+  color: black;
+  opacity: 0.8;
+  background-color: transparent;
+}
+
+.buttons-box {
+  display: inline-grid;
+  grid-auto-columns: 1fr;
+  float: right;
+
+  margin-top: 16px;
+  height: 32px;
+}
+
+.btn {
+  grid-row: 1;
+
+  height: inherit;
+  margin: 0px 2px;
+  padding: 0px 12px;
+  font-size: 14px;
+
+  outline: none;
+  border: none;
+
+  color: black;
+  border-radius: 5px;
+  transition: 0.125s;
+}
+
+.btn:hover {
+  filter: brightness(90%);
+}
+
+.btn:active {
+  filter: brightness(80%);
+  box-shadow: 0 0 1px #000000aa;
+}

@@ -1,0 +1,22 @@
+<h1>Please sign in</h1>
+<form [formGroup]="form">
+  <div *ngIf="(!form.valid && form.touched) || invalidLoginInfo" class="alert alert-danger">
+    <div *ngIf="!email?.valid">Please provide valid e-mail address</div>
+    <div *ngIf="invalidLoginInfo">Wrong login information</div>
+  </div>
+  <input formControlName="email" id="email" type="text" placeholder="E-mail" class="form-control" />
+  <input
+    formControlName="password"
+    id="password"
+    [type]="form.get('showPassword')?.value ? 'text' : 'password'"
+    placeholder="Passowrd"
+    class="form-control"
+  />
+  <div class="checkbox">
+    <label for="showPassword">
+      <input formControlName="showPassword" id="showPassword" type="checkbox" />
+      Show password
+    </label>
+  </div>
+  <button class="btn btn-primary" (click)="submitLoginInfo()">Sign in</button>
+</form>

@@ -1,0 +1,12 @@
+.btn {
+  margin-top: 2px;
+  width: 100%;
+}
+
+.form-control {
+  margin: 2px 0px;
+}
+
+.form-control-invalid {
+  border-color: red;
+}

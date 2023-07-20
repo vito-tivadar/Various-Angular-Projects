@@ -1,0 +1,23 @@
+<div style.width="calc(100% - ({{ buttons.length - 1 }} * {{ buttonsWidth }}))">
+  <input
+    #searchBox
+    class="search-bar"
+    placeholder="Search {{ buttons[0].searchEngine }} ..."
+    autofocus
+    (keydown.enter)="buttons[0].searchQueryFunction(searchBox.value)"
+  />
+</div>
+
+<div style.width="calc({{ buttons.length - 1 }} * {{ buttonsWidth }})">
+  <button
+    *ngFor="let button of buttons; index as i; first as f; last as l"
+    [hidden]="f"
+    class="btn"
+    [class.btn-first]="i == 1"
+    [class.btn-last]="l"
+    [style.width]="buttonsWidth"
+    (click)="button.searchQueryFunction(searchBox.value)"
+  >
+    {{ button.searchEngine }}
+  </button>
+</div>

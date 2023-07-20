@@ -1,0 +1,22 @@
+<div class="backdrop" [style.backgroundColor]="backdropColor">
+  <div class="modal-box" [style.backgroundColor]="modalColor">
+    <div class="test">
+      <ng-template #modalContent></ng-template>
+    </div>
+    <div *ngIf="buttons.length > 0" class="buttons-box">
+      <!-- CUSTOM BUTTONS -->
+      <button
+        class="btn"
+        *ngFor="let button of buttons"
+        [style]="'background-color: ' + button.color"
+        [class]="button.cal"
+        (click)="button.onClick()"
+      >
+        {{ button.text }}
+      </button>
+    </div>
+    <button *ngIf="showModalXbutton" class="x-button x-button-modal" (click)="closeCurrentModal()">×</button>
+  </div>
+</div>
+<button *ngIf="showBackdropXbutton" class="x-button x-button-backdrop" (click)="closeCurrentModal()">×</button>
+<scroll-disabler [disableScroll]="disableScrolling"></scroll-disabler>

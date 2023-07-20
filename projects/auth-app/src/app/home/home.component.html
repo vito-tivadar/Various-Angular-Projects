@@ -1,0 +1,14 @@
+<h1>Home Page</h1>
+<label *ngIf="userInfo?.username" style="font-size: 18px">Welcome: {{ userInfo?.username }}</label>
+<!-- <div *ngIf="userInfo">{{ getUserInfo() }}</div> -->
+<ul>
+  <li *ngIf="userInfo?.isAdmin">
+    <a [routerLink]="['admin']">Admin</a>
+  </li>
+  <li *ngIf="userInfo">
+    <a (click)="logout()">Logout</a>
+  </li>
+  <li *ngIf="!userInfo">
+    <a [routerLink]="['login']">Login</a>
+  </li>
+</ul>

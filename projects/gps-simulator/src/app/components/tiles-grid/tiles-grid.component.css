@@ -1,0 +1,70 @@
+:host {
+  --width: 256px;
+  --border: 0px;
+  --calculatedWidth: calc((var(--width) + 4 * var(--border)) * 3);
+
+  --rotation: 360deg;
+
+  /* --top: 128px;
+  --left: 128px; */
+
+  position: relative;
+  width: var(--calculatedWidth);
+  height: var(--calculatedWidth);
+}
+
+.tiles-grid {
+  position: absolute;
+  top: var(--top);
+  left: var(--left);
+  transform-origin: calc(var(--calculatedWidth) / 2 - var(--left)) calc(var(--calculatedWidth) / 2 - var(--top));
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #888;
+
+  width: inherit;
+  height: inherit;
+  transition: 10s;
+}
+
+.tiles-grid:hover {
+  transform: rotate(var(--rotation));
+}
+
+.grid-image {
+  background-color: #555;
+  border: var(--border) red solid;
+  width: var(--width);
+  height: var(--width);
+}
+
+.center-container {
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  position: absolute;
+  top: calc(50% - 16px);
+  left: calc(50% - 16px);
+}
+
+.screen {
+  position: absolute;
+  border: 2px blue solid;
+  background-color: rgba(0, 0, 255, 0.1);
+  top: calc(50% - 320px / 2);
+  left: calc(50% - 240px / 2);
+}
+
+.dot {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+
+  background-color: red;
+  border-radius: 50%;
+}
